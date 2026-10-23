@@ -4,9 +4,11 @@
   <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0:%233a1c28,50:%23662249,100:%231a1020&height=220&section=header&text=Hi%20there,%20I'm%20Harra%20🐾&fontSize=38&fontAlignY=38&desc=Full%20Stack%20Web%20Developer%20✦%20Digital%20Artisan%20✦%20UI/UX%20Designer&descAlignY=62&descAlign=50" width="100%" alt="Header Banner" />
 
   <!-- Animated Typing Subtitle -->
-  <a href="https://readme-typing-svg.demolab.com">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=19&duration=3000&pause=1000&color=F38BA8&center=true&vCenter=true&width=520&lines=Full+Stack+Web+Developer+✨;Creative+Digital+Artisan+🎨;Crafting+Modern+%26+3D+Web+Experiences+🌸;Coffee+%26+Matcha+Enthusiast+🍵" alt="Typing SVG" />
-  </a>
+  <p align="center">
+    <a href="https://git.io/typing-svg">
+      <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&amp;size=19&amp;duration=3000&amp;pause=1000&amp;color=F38BA8&amp;center=true&amp;vCenter=true&amp;width=520&amp;lines=Full+Stack+Web+Developer;Creative+Digital+Artisan;Crafting+Modern+%26+3D+Web+Experiences;Coffee+%26+Matcha+Enthusiast" alt="Typing SVG" />
+    </a>
+  </p>
 
   <!-- Quick Badges & Profile Views -->
   <p align="center">

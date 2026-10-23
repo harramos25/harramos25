@@ -1,0 +1,198 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 340" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="polaroidBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff0f5" />
+      <stop offset="50%" stop-color="#ffd6e7" stop-opacity="0.5" />
+      <stop offset="100%" stop-color="#fff0f5" />
+    </linearGradient>
+
+    <!-- Cloud Platform Gradient -->
+    <linearGradient id="cloudPlatformGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#ffe4ef" />
+    </linearGradient>
+
+    <!-- Washi Tape Pattern -->
+    <pattern id="mascotWashi" width="10" height="10" patternTransform="rotate(45 0 0)" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="0" x2="0" y2="10" stroke="#ffb3d1" stroke-width="2.5" />
+      <line x1="5" y1="0" x2="5" y2="10" stroke="#ffd6e7" stroke-width="2.5" />
+    </pattern>
+
+    <!-- Drink Gradient -->
+    <linearGradient id="pinkDrinkGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ff8fb8" />
+      <stop offset="100%" stop-color="#f06292" />
+    </linearGradient>
+
+    <filter id="stickerShadow" x="-10%" y="-10%" width="125%" height="125%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#f06292" flood-opacity="0.12" />
+    </filter>
+  </defs>
+
+  <style>
+    /* <![CDATA[ */
+    .bubbly-font {
+      font-family: ui-rounded, 'Varela Round', 'Nunito', 'Quicksand', system-ui, -apple-system, sans-serif;
+    }
+
+    /* Eye Blink Animation */
+    @keyframes pandaBlink {
+      0%, 88%, 94%, 100% { transform: scaleY(1); }
+      91% { transform: scaleY(0.12); }
+    }
+    .panda-eye {
+      transform-origin: 210px 156px;
+      animation: pandaBlink 4s infinite ease-in-out;
+    }
+
+    /* Floating Bounce */
+    @keyframes mascotFloat {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-6px); }
+    }
+    .floating-mascot {
+      animation: mascotFloat 4s ease-in-out infinite;
+    }
+
+    /* Floating Hearts */
+    @keyframes heartDrift1 {
+      0% { transform: translate(0px, 0px) scale(0.6); opacity: 0; }
+      30% { opacity: 0.9; }
+      80% { opacity: 0.5; }
+      100% { transform: translate(14px, -36px) scale(1.1); opacity: 0; }
+    }
+    @keyframes heartDrift2 {
+      0% { transform: translate(0px, 0px) scale(0.5); opacity: 0; }
+      35% { opacity: 0.9; }
+      85% { opacity: 0.4; }
+      100% { transform: translate(-16px, -40px) scale(1.05); opacity: 0; }
+    }
+    .m-heart-1 { animation: heartDrift1 3.4s infinite ease-out 0.6s; }
+    .m-heart-2 { animation: heartDrift2 3.8s infinite ease-out 2s; }
+
+    /* Reduced Motion */
+    @media (prefers-reduced-motion: reduce) {
+      .panda-eye, .floating-mascot, .m-heart-1, .m-heart-2 {
+        animation: none !important;
+      }
+      .panda-eye { transform: scaleY(1) !important; }
+    }
+    /* ]]> */
+  </style>
+
+  <!-- Polaroid / Sticker Panel Background -->
+  <rect x="2" y="2" width="416" height="336" rx="24" fill="url(#polaroidBg)" stroke="#ffb3d1" stroke-width="2.8" filter="url(#stickerShadow)" />
+
+  <!-- Corner Washi Tape Strip -->
+  <g transform="translate(300, -2) rotate(12)">
+    <rect x="0" y="0" width="70" height="22" rx="4" fill="url(#mascotWashi)" stroke="#f06292" stroke-width="0.8" opacity="0.85" />
+  </g>
+
+  <!-- Top Sticker Ribbon -->
+  <g transform="translate(95, 18)">
+    <rect x="0" y="0" width="230" height="26" rx="13" fill="#ffffff" stroke="#ffb3d1" stroke-width="1.6" />
+    <circle cx="16" cy="13" r="3.5" fill="#f06292" />
+    <circle cx="214" cy="13" r="3.5" fill="#ff8fb8" />
+    <text x="115" y="18" class="bubbly-font" font-size="11.5" font-weight="800" fill="#f06292" text-anchor="middle" letter-spacing="1.2">✿ CLOUD PANDA MASCOT ✿</text>
+  </g>
+
+  <!-- PANDA CHARACTER & CLOUD (Floating group) -->
+  <g class="floating-mascot">
+    <!-- Puffy Cloud Under Panda -->
+    <g transform="translate(90, 235)">
+      <path d="M 40 40 C 25 40 10 28 16 12 C 2 5 -2 -15 12 -26 C 8 -44 28 -55 44 -46 C 58 -60 84 -60 98 -46 C 114 -55 134 -44 130 -26 C 144 -15 140 5 126 12 C 132 28 116 40 102 40 Z" fill="url(#cloudPlatformGrad)" stroke="#ffb3d1" stroke-width="2" />
+      <!-- Cloud Sparkles -->
+      <path d="M 28 8 Q 28 14 22 14 Q 28 14 28 20 Q 28 14 34 14 Q 28 14 28 8 Z" fill="#fff7d6" stroke="#ff8fb8" stroke-width="0.8" />
+      <path d="M 200 4 Q 200 10 194 10 Q 200 10 200 16 Q 200 10 206 10 Q 200 10 200 4 Z" fill="#fff7d6" stroke="#ff8fb8" stroke-width="0.8" />
+    </g>
+
+    <!-- Panda Ears -->
+    <g transform="translate(148, 92)">
+      <circle cx="0" cy="0" r="28" fill="#351a2a" stroke="#f06292" stroke-width="1.8" />
+      <circle cx="2" cy="2" r="14" fill="#5a2a45" />
+      <circle cx="3" cy="3" r="8" fill="#ffb3d1" opacity="0.45" />
+    </g>
+    <g transform="translate(272, 92)">
+      <circle cx="0" cy="0" r="28" fill="#351a2a" stroke="#f06292" stroke-width="1.8" />
+      <circle cx="-2" cy="2" r="14" fill="#5a2a45" />
+      <circle cx="-3" cy="3" r="8" fill="#ffb3d1" opacity="0.45" />
+    </g>
+
+    <!-- Chubby Panda Body -->
+    <ellipse cx="210" cy="225" rx="72" ry="52" fill="#ffffff" stroke="#ffb3d1" stroke-width="2" />
+    <!-- Pink Pinafore / Scarf Detail -->
+    <path d="M 152 205 C 144 235 158 260 178 266 L 242 266 C 262 260 276 235 268 205 Z" fill="#ffd6e7" stroke="#ff8fb8" stroke-width="1.5" />
+    <circle cx="210" cy="228" r="4" fill="#f06292" />
+
+    <!-- Panda Head -->
+    <ellipse cx="210" cy="150" rx="72" ry="64" fill="#ffffff" stroke="#ffb3d1" stroke-width="2" />
+
+    <!-- Eye Patches (Characteristic tilted cute kawaii ovals) -->
+    <ellipse cx="178" cy="150" rx="20" ry="24" transform="rotate(-14 178 150)" fill="#351a2a" />
+    <ellipse cx="242" cy="150" rx="20" ry="24" transform="rotate(14 242 150)" fill="#351a2a" />
+
+    <!-- Blinking Anime Eyes -->
+    <g class="panda-eye">
+      <!-- Left Eye -->
+      <circle cx="180" cy="150" r="10" fill="#140a18" />
+      <circle cx="177" cy="147" r="4.2" fill="#ffffff" />
+      <circle cx="183" cy="153" r="2" fill="#cfeaff" />
+
+      <!-- Right Eye -->
+      <circle cx="240" cy="150" r="10" fill="#140a18" />
+      <circle cx="237" cy="147" r="4.2" fill="#ffffff" />
+      <circle cx="243" cy="153" r="2" fill="#cfeaff" />
+    </g>
+
+    <!-- Rosy Blush Cheeks -->
+    <ellipse cx="158" cy="170" rx="14" ry="8" fill="#ff8fb8" opacity="0.75" />
+    <ellipse cx="262" cy="170" rx="14" ry="8" fill="#ff8fb8" opacity="0.75" />
+    <text x="154" y="173" font-size="9" fill="#ffffff" opacity="0.9">✦</text>
+    <text x="258" y="173" font-size="9" fill="#ffffff" opacity="0.9">✦</text>
+
+    <!-- Cute Nose & Happy Mouth -->
+    <ellipse cx="210" cy="162" rx="6" ry="4.5" fill="#351a2a" />
+    <ellipse cx="209" cy="161" rx="2" ry="1.2" fill="#ffffff" opacity="0.6" />
+    <path d="M 203 169 C 203 174 208 174 210 170 C 212 174 217 174 217 169" fill="none" stroke="#351a2a" stroke-width="2.2" stroke-linecap="round" />
+
+    <!-- Panda Paws Holding Pink Boba / Strawberry Drink -->
+    <!-- Left Paw -->
+    <ellipse cx="168" cy="226" rx="15" ry="12" transform="rotate(-15 168 226)" fill="#351a2a" stroke="#f06292" stroke-width="1.2" />
+    <circle cx="162" cy="223" r="3" fill="#ffb3d1" />
+    <circle cx="169" cy="220" r="3" fill="#ffb3d1" />
+    <circle cx="175" cy="222" r="3" fill="#ffb3d1" />
+
+    <!-- Right Paw -->
+    <ellipse cx="252" cy="226" rx="15" ry="12" transform="rotate(15 252 226)" fill="#351a2a" stroke="#f06292" stroke-width="1.2" />
+    <circle cx="245" cy="222" r="3" fill="#ffb3d1" />
+    <circle cx="251" cy="220" r="3" fill="#ffb3d1" />
+    <circle cx="258" cy="223" r="3" fill="#ffb3d1" />
+
+    <!-- Pink Drink Cup -->
+    <g transform="translate(210, 232)">
+      <!-- Cup Body -->
+      <path d="M -22 -6 C -22 20 -16 26 0 26 C 16 26 22 20 22 -6 Z" fill="url(#pinkDrinkGrad)" stroke="#f06292" stroke-width="1.8" />
+      <!-- Whipped Cream Dome -->
+      <ellipse cx="0" cy="-6" rx="22" ry="8" fill="#ffffff" stroke="#ffb3d1" stroke-width="1.5" />
+      <path d="M -12 -8 Q 0 -18 12 -8" fill="#ffffff" stroke="#ffb3d1" stroke-width="1.5" />
+      <circle cx="0" cy="-14" r="4" fill="#f06292" />
+      <!-- Heart Straw -->
+      <line x1="8" y1="-8" x2="16" y2="-24" stroke="#ffd6e7" stroke-width="3.5" stroke-linecap="round" />
+      <text x="16" y="-22" font-size="10" fill="#f06292">♡</text>
+      <!-- Cup Emblem -->
+      <text x="0" y="14" font-size="12" fill="#ffffff" text-anchor="middle">♡</text>
+    </g>
+
+    <!-- Floating Pink Hearts -->
+    <g fill="#f06292">
+      <path class="m-heart-1" transform="translate(228, 205)" d="M 0 0 C -3 -3 -6 -1 -4 2 C -3 4 0 6 0 6 C 0 6 3 4 4 2 C 6 -1 3 -3 0 0 Z" />
+      <path class="m-heart-2" transform="translate(190, 210)" d="M 0 0 C -2.5 -2.5 -5 -1 -3.5 1.5 C -2.5 3 0 5 0 5 C 0 5 2.5 3 3.5 1.5 C 5 -1 2.5 -2.5 0 0 Z" fill="#ff8fb8" />
+    </g>
+  </g>
+
+  <!-- Bottom Label -->
+  <text x="210" y="320" class="bubbly-font" font-size="12.5" font-weight="800" fill="#5a2a45" text-anchor="middle" letter-spacing="0.5">
+    HARRA&apos;S CLOUD PANDA • <tspan fill="#f06292">ALWAYS DREAMING ✿</tspan>
+  </text>
+</svg>

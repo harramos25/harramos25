@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 92" width="100%" height="100%">
+  <defs>
+    <linearGradient id="allPrjBg" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="50%" stop-color="#fff5f9" />
+      <stop offset="100%" stop-color="#fff0f5" />
+    </linearGradient>
+
+    <!-- Washi Tape Pattern -->
+    <pattern id="allWashi" width="8" height="8" patternTransform="rotate(45 0 0)" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="0" x2="0" y2="8" stroke="#ffb3d1" stroke-width="2" />
+      <line x1="4" y1="0" x2="4" y2="8" stroke="#ffd6e7" stroke-width="2" />
+    </pattern>
+
+    <filter id="allPrjShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#f06292" flood-opacity="0.12" />
+    </filter>
+  </defs>
+
+  <style>
+    /* <![CDATA[ */
+    .bubbly-font {
+      font-family: ui-rounded, 'Varela Round', 'Nunito', 'Quicksand', system-ui, -apple-system, sans-serif;
+    }
+
+    @keyframes floatAllPrj {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-3px); }
+    }
+    .all-prj-glow {
+      animation: floatAllPrj 4s ease-in-out infinite;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .all-prj-glow { animation: none !important; }
+    }
+    /* ]]> */
+  </style>
+
+  <!-- Card Body -->
+  <rect x="2" y="2" width="856" height="88" rx="20" fill="url(#allPrjBg)" stroke="#ffb3d1" stroke-width="2.6" filter="url(#allPrjShadow)" class="all-prj-glow" />
+
+  <!-- Corner Washi Tape -->
+  <rect x="42" y="-4" width="56" height="15" rx="3" fill="url(#allWashi)" stroke="#f06292" stroke-width="0.8" opacity="0.85" />
+
+  <!-- Left Illustration Sticker: Cute Scrapbook Journal -->
+  <g transform="translate(24, 22)">
+    <circle cx="24" cy="24" r="22" fill="#ffd6e7" stroke="#f06292" stroke-width="1.4" />
+    <!-- Book -->
+    <path d="M 15 16 L 24 14 L 33 16 L 33 32 L 24 30 L 15 32 Z" fill="#ffffff" stroke="#f06292" stroke-width="1.2" />
+    <line x1="24" y1="14" x2="24" y2="30" stroke="#f06292" stroke-width="1.2" />
+    <circle cx="19" cy="22" r="1.5" fill="#f06292" />
+    <circle cx="29" cy="22" r="1.5" fill="#f06292" />
+    <circle cx="24" cy="11" r="2" fill="#fff7d6" stroke="#f06292" stroke-width="0.8" />
+  </g>
+
+  <!-- Title & Description -->
+  <g transform="translate(88, 22)">
+    <text x="0" y="16" class="bubbly-font" font-size="18" font-weight="900" fill="#5a2a45">
+      see all my projects <tspan fill="#f06292" font-size="14">✿ COMPLETE JOURNAL ARCHIVE</tspan>
+    </text>
+    <text x="0" y="38" class="bubbly-font" font-size="12" font-weight="600" fill="#5a2a45">
+      Explore all public open-source experiments, 3D prototypes, and aesthetic web apps on GitHub.
+    </text>
+
+    <!-- Chips -->
+    <g transform="translate(0, 46)">
+      <rect x="0" y="0" width="88" height="18" rx="9" fill="#ffd6e7" stroke="#ff8fb8" stroke-width="1" />
+      <text x="44" y="13" class="bubbly-font" font-size="9.5" font-weight="800" fill="#f06292" text-anchor="middle">Open Source</text>
+
+      <rect x="94" y="0" width="90" height="18" rx="9" fill="#cfeaff" stroke="#ff8fb8" stroke-width="1" />
+      <text x="139" y="13" class="bubbly-font" font-size="9.5" font-weight="800" fill="#5a2a45" text-anchor="middle">Three.js R&amp;D</text>
+
+      <rect x="190" y="0" width="94" height="18" rx="9" fill="#ffffff" stroke="#ffb3d1" stroke-width="1" />
+      <text x="237" y="13" class="bubbly-font" font-size="9.5" font-weight="800" fill="#5a2a45" text-anchor="middle">Web Projects</text>
+    </g>
+  </g>
+
+  <!-- Open Full Menu Button Shape -->
+  <g transform="translate(636, 28)">
+    <rect x="0" y="0" width="200" height="36" rx="18" fill="#ffd6e7" stroke="#f06292" stroke-width="1.6" />
+    <text x="100" y="23" class="bubbly-font" font-size="12" font-weight="900" fill="#f06292" text-anchor="middle">BROWSE ALL REPOS ↗</text>
+  </g>
+</svg>

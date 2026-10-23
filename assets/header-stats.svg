@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 56" width="100%" height="100%">
+  <defs>
+    <linearGradient id="hdrPinkGradStats" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#fff0f5" />
+      <stop offset="50%" stop-color="#ffd6e7" />
+      <stop offset="100%" stop-color="#fff0f5" />
+    </linearGradient>
+    <filter id="hdrShimmerStats" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#f06292" flood-opacity="0.1" />
+    </filter>
+  </defs>
+
+  <style>
+    /* <![CDATA[ */
+    .hdr-font {
+      font-family: ui-rounded, 'Varela Round', 'Nunito', 'Quicksand', system-ui, -apple-system, sans-serif;
+    }
+
+    @keyframes stickerWiggle4 {
+      0%, 100% { transform: rotate(0deg); }
+      25% { transform: rotate(-5deg); }
+      75% { transform: rotate(5deg); }
+    }
+    .wiggle-icon4 {
+      animation: stickerWiggle4 3.6s ease-in-out infinite;
+      transform-origin: 38px 28px;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .wiggle-icon4 { animation: none !important; }
+    }
+    /* ]]> */
+  </style>
+
+  <!-- Puffy Rounded Banner Frame -->
+  <rect x="2" y="2" width="856" height="52" rx="26" fill="url(#hdrPinkGradStats)" stroke="#ffb3d1" stroke-width="2.8" filter="url(#hdrShimmerStats)" />
+
+  <!-- Left Sticker Icon: Tiny Chart Sticker -->
+  <g class="wiggle-icon4" transform="translate(24, 12)">
+    <circle cx="16" cy="16" r="16" fill="#ffffff" stroke="#ffb3d1" stroke-width="1.8" />
+    <!-- Mini Bars -->
+    <rect x="9" y="16" width="3" height="8" rx="1.5" fill="#ffd6e7" stroke="#f06292" stroke-width="0.8" />
+    <rect x="14" y="12" width="3" height="12" rx="1.5" fill="#cfeaff" stroke="#f06292" stroke-width="0.8" />
+    <rect x="19" y="8" width="3" height="16" rx="1.5" fill="#ffb3d1" stroke="#f06292" stroke-width="0.8" />
+    <circle cx="20.5" cy="6" r="1.5" fill="#fff7d6" />
+  </g>
+
+  <!-- Header Title -->
+  <text x="68" y="36" class="hdr-font" font-size="22" font-weight="900" fill="#5a2a45" letter-spacing="-0.3">
+    my stats <tspan fill="#f06292" font-size="18">✿</tspan>
+  </text>
+
+  <!-- Dashed Connecting Line -->
+  <line x1="190" y1="28" x2="570" y2="28" stroke="#ffb3d1" stroke-width="1.5" stroke-dasharray="5,6" />
+
+  <!-- Right Pill Badge -->
+  <g transform="translate(590, 14)">
+    <rect x="0" y="0" width="240" height="28" rx="14" fill="#ffffff" stroke="#ff8fb8" stroke-width="1.5" />
+    <circle cx="14" cy="14" r="4" fill="#cfeaff" />
+    <text x="26" y="19" class="hdr-font" font-size="11" font-weight="800" fill="#5a2a45" letter-spacing="0.8">LOGBOOK #04 • ACTIVITY &amp; STREAKS</text>
+  </g>
+</svg>

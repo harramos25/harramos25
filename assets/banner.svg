@@ -1,0 +1,274 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 250" width="100%" height="100%">
+  <defs>
+    <!-- Pastel Pink Sky Gradient -->
+    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff0f5" />
+      <stop offset="50%" stop-color="#ffd6e7" />
+      <stop offset="100%" stop-color="#ffe4ef" />
+    </linearGradient>
+
+    <!-- Cloud Fill Gradient -->
+    <linearGradient id="cloudGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#fff5f9" />
+    </linearGradient>
+
+    <!-- Washi Tape Pattern -->
+    <pattern id="washiStripes" width="12" height="12" patternTransform="rotate(45 0 0)" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="0" x2="0" y2="12" stroke="#ffb3d1" stroke-width="3" />
+      <line x1="6" y1="0" x2="6" y2="12" stroke="#ffd6e7" stroke-width="3" />
+    </pattern>
+
+    <!-- Bubbly Text Gradient -->
+    <linearGradient id="bubblyTextGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f06292" />
+      <stop offset="60%" stop-color="#ff8fb8" />
+      <stop offset="100%" stop-color="#f06292" />
+    </linearGradient>
+
+    <!-- Soft Cloud Shadow -->
+    <filter id="cloudShadow" x="-10%" y="-10%" width="125%" height="125%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#f06292" flood-opacity="0.15" />
+    </filter>
+
+    <filter id="softSparkle" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="1.5" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <style>
+    /* <![CDATA[ */
+    .bubbly-font {
+      font-family: ui-rounded, 'Varela Round', 'Nunito', 'Quicksand', system-ui, -apple-system, sans-serif;
+    }
+
+    /* Drifting Clouds Animation */
+    @keyframes cloudDrift1 {
+      0%, 100% { transform: translateX(0px); }
+      50% { transform: translateX(14px); }
+    }
+    @keyframes cloudDrift2 {
+      0%, 100% { transform: translateX(0px); }
+      50% { transform: translateX(-12px); }
+    }
+    .cloud-layer-1 { animation: cloudDrift1 8s ease-in-out infinite; }
+    .cloud-layer-2 { animation: cloudDrift2 10s ease-in-out infinite; }
+
+    /* Twinkling Butter Sparkles */
+    @keyframes sparkleTwinkle {
+      0%, 100% { opacity: 0.35; transform: scale(0.8); }
+      50% { opacity: 1; transform: scale(1.2); }
+    }
+    .sp-1 { animation: sparkleTwinkle 3s ease-in-out infinite; transform-origin: 140px 42px; }
+    .sp-2 { animation: sparkleTwinkle 3.5s ease-in-out infinite 0.7s; transform-origin: 760px 48px; }
+    .sp-3 { animation: sparkleTwinkle 2.8s ease-in-out infinite 1.4s; transform-origin: 790px 190px; }
+    .sp-4 { animation: sparkleTwinkle 3.2s ease-in-out infinite 2.1s; transform-origin: 190px 200px; }
+
+    /* Floating Pastel 3D Cube */
+    @keyframes floatCube {
+      0%, 100% { transform: translateY(0px) rotate(0deg); }
+      50% { transform: translateY(-8px) rotate(3deg); }
+    }
+    .floating-cube {
+      animation: floatCube 4.5s ease-in-out infinite;
+      transform-origin: 185px 125px;
+    }
+
+    /* Role Cycler: SVG Keyframes, First Frame Readable, Pause-Safe */
+    @keyframes cycleRole1 {
+      0%, 20% { opacity: 1; transform: translateY(0px); }
+      25% { opacity: 0; transform: translateY(-6px); }
+      95% { opacity: 0; transform: translateY(6px); }
+      100% { opacity: 1; transform: translateY(0px); }
+    }
+    @keyframes cycleRole2 {
+      0%, 20% { opacity: 0; transform: translateY(6px); }
+      25%, 45% { opacity: 1; transform: translateY(0px); }
+      50% { opacity: 0; transform: translateY(-6px); }
+      100% { opacity: 0; }
+    }
+    @keyframes cycleRole3 {
+      0%, 45% { opacity: 0; transform: translateY(6px); }
+      50%, 70% { opacity: 1; transform: translateY(0px); }
+      75% { opacity: 0; transform: translateY(-6px); }
+      100% { opacity: 0; }
+    }
+    @keyframes cycleRole4 {
+      0%, 70% { opacity: 0; transform: translateY(6px); }
+      75%, 95% { opacity: 1; transform: translateY(0px); }
+      100% { opacity: 0; transform: translateY(-6px); }
+    }
+
+    .role-text-1 { animation: cycleRole1 12s infinite; opacity: 1; }
+    .role-text-2 { animation: cycleRole2 12s infinite; opacity: 0; }
+    .role-text-3 { animation: cycleRole3 12s infinite; opacity: 0; }
+    .role-text-4 { animation: cycleRole4 12s infinite; opacity: 0; }
+
+    /* Reduced Motion Accessibility */
+    @media (prefers-reduced-motion: reduce) {
+      .cloud-layer-1, .cloud-layer-2, .floating-cube,
+      .sp-1, .sp-2, .sp-3, .sp-4 {
+        animation: none !important;
+      }
+      .role-text-1 { opacity: 1 !important; animation: none !important; }
+      .role-text-2, .role-text-3, .role-text-4 { display: none !important; }
+    }
+    /* ]]> */
+  </style>
+
+  <!-- Card Background: Soft Pink Panel (Visible in both Light & Dark GitHub mode) -->
+  <rect x="2" y="2" width="856" height="246" rx="26" fill="url(#skyGrad)" stroke="#ffb3d1" stroke-width="3" />
+
+  <!-- Cute Washi Tape on Top Left & Top Right -->
+  <g transform="translate(48, -4) rotate(-4)">
+    <rect x="0" y="0" width="68" height="22" rx="4" fill="url(#washiStripes)" opacity="0.85" stroke="#f06292" stroke-width="0.8" />
+  </g>
+  <g transform="translate(744, -4) rotate(4)">
+    <rect x="0" y="0" width="68" height="22" rx="4" fill="url(#washiStripes)" opacity="0.85" stroke="#f06292" stroke-width="0.8" />
+  </g>
+
+  <!-- DRIFTING PUFFY CLOUDS (Background Layer) -->
+  <g class="cloud-layer-1" fill="#ffffff" opacity="0.85" filter="url(#cloudShadow)">
+    <!-- Cloud Left -->
+    <path d="M 50 160 C 40 160 30 150 34 138 C 24 134 22 118 32 110 C 30 96 46 88 58 94 C 68 84 88 84 98 94 C 110 88 126 96 124 110 C 134 118 132 134 122 138 C 126 150 116 160 106 160 Z" />
+    <!-- Cloud Right -->
+    <path d="M 730 110 C 722 110 714 104 716 95 C 708 92 706 80 714 74 C 712 63 724 57 733 61 C 740 54 756 54 764 61 C 772 57 784 63 783 74 C 790 80 788 92 780 95 C 783 104 775 110 768 110 Z" />
+  </g>
+
+  <g class="cloud-layer-2" fill="#fff5f9" opacity="0.7">
+    <!-- Cloud Center Low -->
+    <path d="M 390 230 C 375 230 365 218 370 205 C 358 200 355 182 368 172 C 365 156 385 146 400 153 C 412 142 435 142 448 153 C 462 146 482 156 480 172 C 492 182 490 200 478 205 C 482 218 472 230 460 230 Z" />
+  </g>
+
+  <!-- TWINKLING BUTTER SPARKLES & HEARTS -->
+  <!-- Sparkle 1 -->
+  <g class="sp-1" transform="translate(140, 42)" filter="url(#softSparkle)">
+    <path d="M 0 -11 Q 0 0 11 0 Q 0 0 0 11 Q 0 0 -11 0 Q 0 0 0 -11 Z" fill="#fff7d6" stroke="#ffb3d1" stroke-width="0.8" />
+  </g>
+  <!-- Sparkle 2 -->
+  <g class="sp-2" transform="translate(760, 48)" filter="url(#softSparkle)">
+    <path d="M 0 -9 Q 0 0 9 0 Q 0 0 0 9 Q 0 0 -9 0 Q 0 0 0 -9 Z" fill="#fff7d6" stroke="#ffb3d1" stroke-width="0.8" />
+  </g>
+  <!-- Sparkle 3 -->
+  <g class="sp-3" transform="translate(790, 190)" filter="url(#softSparkle)">
+    <path d="M 0 -8 Q 0 0 8 0 Q 0 0 0 8 Q 0 0 -8 0 Q 0 0 0 -8 Z" fill="#fff7d6" stroke="#f06292" stroke-width="0.8" />
+  </g>
+  <!-- Sparkle 4 -->
+  <g class="sp-4" transform="translate(190, 200)" filter="url(#softSparkle)">
+    <path d="M 0 -7 Q 0 0 7 0 Q 0 0 0 7 Q 0 0 -7 0 Q 0 0 0 -7 Z" fill="#fff7d6" stroke="#f06292" stroke-width="0.8" />
+  </g>
+
+  <!-- Floating Hearts -->
+  <g fill="#ff8fb8" opacity="0.85">
+    <path transform="translate(710, 155) scale(0.9)" d="M 0 0 C -4 -4 -9 -2 -7 3 C -5 7 0 11 0 11 C 0 11 5 7 7 3 C 9 -2 4 -4 0 0 Z" />
+    <path transform="translate(100, 75) scale(0.75)" d="M 0 0 C -4 -4 -9 -2 -7 3 C -5 7 0 11 0 11 C 0 11 5 7 7 3 C 9 -2 4 -4 0 0 Z" fill="#f06292" />
+    <path transform="translate(740, 95) scale(0.65)" d="M 0 0 C -4 -4 -9 -2 -7 3 C -5 7 0 11 0 11 C 0 11 5 7 7 3 C 9 -2 4 -4 0 0 Z" fill="#e8d5ff" />
+  </g>
+
+  <!-- LEFT HERO ELEMENT: DREAMY PUFFY CLOUD & PASTEL 3D CUBE (Three.js nod) -->
+  <g transform="translate(62, 54)">
+    <!-- Base Cloud Platform -->
+    <path d="M 50 140 C 35 140 20 128 26 112 C 12 105 8 85 22 74 C 18 56 38 45 54 54 C 68 40 94 40 108 54 C 124 45 144 56 140 74 C 154 85 150 105 136 112 C 142 128 126 140 112 140 Z" fill="url(#cloudGrad)" stroke="#ffb3d1" stroke-width="2.5" filter="url(#cloudShadow)" />
+
+    <!-- Cute Smiling Cloud Face -->
+    <circle cx="68" cy="100" r="3.2" fill="#5a2a45" />
+    <circle cx="94" cy="100" r="3.2" fill="#5a2a45" />
+    <!-- Cheeks -->
+    <ellipse cx="60" cy="106" rx="5" ry="3" fill="#ff8fb8" opacity="0.65" />
+    <ellipse cx="102" cy="106" rx="5" ry="3" fill="#ff8fb8" opacity="0.65" />
+    <!-- Happy curved mouth -->
+    <path d="M 78 103 Q 81 107 84 103" fill="none" stroke="#5a2a45" stroke-width="1.8" stroke-linecap="round" />
+
+    <!-- FLOATING PASTEL 3D CUBE (Three.js / React Three Fiber nod) -->
+    <g class="floating-cube" transform="translate(82, 38)">
+      <!-- Soft Shadow under Cube -->
+      <ellipse cx="0" cy="38" rx="20" ry="5" fill="#f06292" opacity="0.15" />
+
+      <!-- Isometric Cube Top Face (Baby Blue) -->
+      <polygon points="0,-18 24,-5 0,8 -24,-5" fill="#cfeaff" stroke="#ff8fb8" stroke-width="2" stroke-linejoin="round" />
+      <!-- Isometric Cube Left Face (Lavender) -->
+      <polygon points="-24,-5 0,8 0,34 -24,21" fill="#e8d5ff" stroke="#ff8fb8" stroke-width="2" stroke-linejoin="round" />
+      <!-- Isometric Cube Right Face (Candy Pink) -->
+      <polygon points="0,8 24,-5 24,21 0,34" fill="#ffd6e7" stroke="#ff8fb8" stroke-width="2" stroke-linejoin="round" />
+
+      <!-- 3D Internal Wireframe Accent Lines -->
+      <line x1="-24" y1="-5" x2="24" y2="21" stroke="#ffffff" stroke-width="1.2" stroke-dasharray="2,3" opacity="0.7" />
+      <line x1="24" y1="-5" x2="-24" y2="21" stroke="#ffffff" stroke-width="1.2" stroke-dasharray="2,3" opacity="0.7" />
+      <line x1="0" y1="-18" x2="0" y2="34" stroke="#ffffff" stroke-width="1.2" stroke-dasharray="2,3" opacity="0.7" />
+
+      <!-- Sparkling Yellow Vertices -->
+      <circle cx="0" cy="-18" r="3" fill="#fff7d6" stroke="#ff8fb8" stroke-width="1" />
+      <circle cx="24" cy="-5" r="2.8" fill="#fff7d6" stroke="#ff8fb8" stroke-width="1" />
+      <circle cx="-24" cy="-5" r="2.8" fill="#fff7d6" stroke="#ff8fb8" stroke-width="1" />
+      <circle cx="0" cy="8" r="3.4" fill="#fff7d6" stroke="#f06292" stroke-width="1.2" />
+      <circle cx="-24" cy="21" r="2.8" fill="#fff7d6" stroke="#ff8fb8" stroke-width="1" />
+      <circle cx="24" cy="21" r="2.8" fill="#fff7d6" stroke="#ff8fb8" stroke-width="1" />
+      <circle cx="0" cy="34" r="3" fill="#fff7d6" stroke="#ff8fb8" stroke-width="1" />
+    </g>
+  </g>
+
+  <!-- RIGHT HERO CONTENT: BUBBLY TYPOGRAPHY & JOURNAL STICKERS -->
+  <g transform="translate(262, 46)">
+    <!-- Cute Header Ribbon Tag -->
+    <g transform="translate(0, 0)">
+      <rect x="0" y="0" width="298" height="28" rx="14" fill="#ffffff" stroke="#ffb3d1" stroke-width="2" filter="url(#cloudShadow)" />
+      <circle cx="16" cy="14" r="4.5" fill="#f06292" />
+      <circle cx="282" cy="14" r="4.5" fill="#ff8fb8" />
+      <text x="149" y="19" class="bubbly-font" font-size="12" font-weight="800" fill="#f06292" text-anchor="middle" letter-spacing="1.2">
+        ✿ PINK CLOUD STICKER JOURNAL ✿
+      </text>
+    </g>
+
+    <!-- Main Title: "Hi, I'm Harra ♡" -->
+    <!-- [EDIT ME: Preferred Display Name: Harra / RAHRA / Harra Lou Ramos] -->
+    <g transform="translate(0, 68)">
+      <text x="0" y="0" class="bubbly-font" font-size="42" font-weight="900" fill="#5a2a45" letter-spacing="-0.8">
+        Hi, I&apos;m <tspan fill="url(#bubblyTextGrad)">Harra</tspan>
+        <tspan font-size="32" fill="#ff8fb8" dx="8">♡</tspan>
+      </text>
+    </g>
+
+    <!-- Gently Cycling Role Line (Native SVG Animation, Pause-Safe) -->
+    <g transform="translate(2, 102)" class="bubbly-font" font-size="18" font-weight="800">
+      <text x="0" y="0" class="role-text-1" fill="#f06292">✦ Web Developer</text>
+      <text x="0" y="0" class="role-text-2" fill="#ff8fb8">✦ UI/UX Designer &amp; Digital Artisan</text>
+      <text x="0" y="0" class="role-text-3" fill="#5a2a45">✦ Creative 3D Web &amp; Three.js Explorer</text>
+      <text x="0" y="0" class="role-text-4" fill="#f06292">✦ Creative Coder &amp; Aesthetic Builder</text>
+    </g>
+
+    <!-- Bio Description -->
+    <text x="2" y="132" class="bubbly-font" font-size="13.5" font-weight="600" fill="#5a2a45" opacity="0.95">
+      Crafting interactive, high-performance web apps from wireframe to deployment.
+    </text>
+
+    <!-- Cute Pastel Sticker Chips -->
+    <g transform="translate(2, 148)">
+      <!-- Chip 1: TypeScript -->
+      <g transform="translate(0, 0)">
+        <rect x="0" y="0" width="88" height="24" rx="12" fill="#ffffff" stroke="#ffb3d1" stroke-width="1.6" />
+        <text x="44" y="16" class="bubbly-font" font-size="11" font-weight="800" fill="#f06292" text-anchor="middle">TypeScript</text>
+      </g>
+      <!-- Chip 2: React -->
+      <g transform="translate(96, 0)">
+        <rect x="0" y="0" width="76" height="24" rx="12" fill="#cfeaff" stroke="#ff8fb8" stroke-width="1.6" />
+        <text x="38" y="16" class="bubbly-font" font-size="11" font-weight="800" fill="#5a2a45" text-anchor="middle">React 19</text>
+      </g>
+      <!-- Chip 3: Three.js -->
+      <g transform="translate(180, 0)">
+        <rect x="0" y="0" width="82" height="24" rx="12" fill="#e8d5ff" stroke="#ff8fb8" stroke-width="1.6" />
+        <text x="41" y="16" class="bubbly-font" font-size="11" font-weight="800" fill="#5a2a45" text-anchor="middle">Three.js</text>
+      </g>
+      <!-- Chip 4: Next.js -->
+      <g transform="translate(270, 0)">
+        <rect x="0" y="0" width="76" height="24" rx="12" fill="#ffffff" stroke="#ffb3d1" stroke-width="1.6" />
+        <text x="38" y="16" class="bubbly-font" font-size="11" font-weight="800" fill="#f06292" text-anchor="middle">Next.js</text>
+      </g>
+      <!-- Chip 5: Tailwind CSS -->
+      <g transform="translate(354, 0)">
+        <rect x="0" y="0" width="98" height="24" rx="12" fill="#ffd6e7" stroke="#f06292" stroke-width="1.6" />
+        <text x="49" y="16" class="bubbly-font" font-size="11" font-weight="800" fill="#5a2a45" text-anchor="middle">Tailwind CSS</text>
+      </g>
+    </g>
+  </g>
+</svg>

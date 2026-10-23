@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 46" width="100%" height="100%">
+  <defs>
+    <linearGradient id="stPinkGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#fff0f5" />
+      <stop offset="50%" stop-color="#ffd6e7" />
+      <stop offset="100%" stop-color="#fff0f5" />
+    </linearGradient>
+
+    <filter id="stGlow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#f06292" flood-opacity="0.1" />
+    </filter>
+  </defs>
+
+  <style>
+    /* <![CDATA[ */
+    .st-font {
+      font-family: ui-rounded, 'Varela Round', 'Nunito', 'Quicksand', system-ui, -apple-system, sans-serif;
+    }
+    /* ]]> */
+  </style>
+
+  <!-- Puffy Pill Frame -->
+  <rect x="2" y="2" width="856" height="42" rx="21" fill="url(#stPinkGrad)" stroke="#ffb3d1" stroke-width="2.4" filter="url(#stGlow)" />
+
+  <!-- Left/Right Indicators -->
+  <circle cx="28" cy="23" r="4.5" fill="#f06292" />
+  <circle cx="44" cy="23" r="3" fill="#ff8fb8" />
+  <circle cx="816" cy="23" r="3" fill="#ff8fb8" />
+  <circle cx="832" cy="23" r="4.5" fill="#f06292" />
+
+  <!-- Center Label -->
+  <text x="430" y="28" class="st-font" font-size="12" font-weight="900" fill="#5a2a45" text-anchor="middle" letter-spacing="1.2">
+    ✦ JOURNAL ACTIVITY LOG • GITHUB STATS &amp; DAILY STREAKS ✦
+  </text>
+</svg>

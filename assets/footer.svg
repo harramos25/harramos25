@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 76" width="100%" height="100%">
+  <defs>
+    <linearGradient id="ftrGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fff5f9" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#ffd6e7" />
+    </linearGradient>
+
+    <linearGradient id="cloudStrokeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffb3d1" />
+      <stop offset="50%" stop-color="#f06292" />
+      <stop offset="100%" stop-color="#ffb3d1" />
+    </linearGradient>
+  </defs>
+
+  <style>
+    /* <![CDATA[ */
+    @keyframes cloudWaveDrift {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-3px); }
+    }
+    .cloud-wave {
+      animation: cloudWaveDrift 4s ease-in-out infinite;
+      transform-origin: 430px 40px;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .cloud-wave { animation: none !important; }
+    }
+    /* ]]> */
+  </style>
+
+  <!-- Puffy Cloud Wave -->
+  <path d="M 0 40 Q 60 20 120 40 Q 180 60 240 40 Q 300 20 360 40 Q 420 60 480 40 Q 540 20 600 40 Q 660 60 720 40 Q 780 20 860 40 L 860 76 L 0 76 Z" fill="url(#ftrGrad)" />
+  <path d="M 0 40 Q 60 20 120 40 Q 180 60 240 40 Q 300 20 360 40 Q 420 60 480 40 Q 540 20 600 40 Q 660 60 720 40 Q 780 20 860 40" fill="none" stroke="url(#cloudStrokeGrad)" stroke-width="2.5" />
+
+  <!-- Center Floating Hearts and Sparkles -->
+  <g class="cloud-wave" transform="translate(430, 24)">
+    <circle cx="0" cy="0" r="14" fill="#ffffff" stroke="#ffb3d1" stroke-width="1.6" />
+    <path d="M 0 2 C -3 -2 -6 0 -5 3 C -3 5 0 8 0 8 C 0 8 3 5 5 3 C 6 0 3 -2 0 2 Z" fill="#f06292" />
+    <circle cx="-18" cy="-2" r="1.8" fill="#fff7d6" stroke="#f06292" stroke-width="0.6" />
+    <circle cx="18" cy="-2" r="1.8" fill="#fff7d6" stroke="#f06292" stroke-width="0.6" />
+  </g>
+</svg>

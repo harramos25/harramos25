@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 195 50" width="100%" height="100%">
+  <defs>
+    <linearGradient id="btnAltGitBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#fff0f5" />
+    </linearGradient>
+    <filter id="btnShadowAltGit" x="-10%" y="-10%" width="125%" height="125%">
+      <feDropShadow dx="0" dy="2.5" stdDeviation="3" flood-color="#f06292" flood-opacity="0.12" />
+    </filter>
+  </defs>
+
+  <style>
+    /* <![CDATA[ */
+    .btn-font {
+      font-family: ui-rounded, 'Varela Round', 'Nunito', 'Quicksand', system-ui, -apple-system, sans-serif;
+    }
+    /* ]]> */
+  </style>
+
+  <!-- Button Background -->
+  <rect x="2" y="2" width="191" height="46" rx="23" fill="url(#btnAltGitBg)" stroke="#ffb3d1" stroke-width="2.2" filter="url(#btnShadowAltGit)" />
+
+  <!-- Terminal / Cat Icon -->
+  <g transform="translate(14, 11)">
+    <circle cx="14" cy="14" r="14" fill="#ffd6e7" stroke="#f06292" stroke-width="1.2" />
+    <path d="M 9 11 L 13 14 L 9 17" fill="none" stroke="#5a2a45" stroke-width="1.6" stroke-linecap="round" />
+    <line x1="15" y1="17" x2="19" y2="17" stroke="#f06292" stroke-width="1.6" stroke-linecap="round" />
+  </g>
+
+  <!-- Text -->
+  <text x="50" y="23" class="btn-font" font-size="12" font-weight="900" fill="#5a2a45">OTHER GITHUB ↗</text>
+  <text x="50" y="38" class="btn-font" font-size="9.5" font-weight="700" fill="#f06292">@404-Lux</text>
+</svg>

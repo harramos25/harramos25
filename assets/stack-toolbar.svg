@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 46" width="100%" height="100%">
+  <defs>
+    <linearGradient id="toolBarPinkGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#fff0f5" />
+      <stop offset="50%" stop-color="#ffd6e7" />
+      <stop offset="100%" stop-color="#fff0f5" />
+    </linearGradient>
+
+    <filter id="toolBarGlow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#f06292" flood-opacity="0.1" />
+    </filter>
+  </defs>
+
+  <style>
+    /* <![CDATA[ */
+    .tb-font {
+      font-family: ui-rounded, 'Varela Round', 'Nunito', 'Quicksand', system-ui, -apple-system, sans-serif;
+    }
+    @keyframes sparkleFloat {
+      0%, 100% { transform: translateY(0px) scale(0.9); opacity: 0.6; }
+      50% { transform: translateY(-3px) scale(1.15); opacity: 1; }
+    }
+    .sp-left { animation: sparkleFloat 3s ease-in-out infinite; transform-origin: 32px 23px; }
+    .sp-right { animation: sparkleFloat 3s ease-in-out infinite 1.5s; transform-origin: 828px 23px; }
+
+    @media (prefers-reduced-motion: reduce) {
+      .sp-left, .sp-right { animation: none !important; }
+    }
+    /* ]]> */
+  </style>
+
+  <!-- Frosted Pink Panel -->
+  <rect x="2" y="2" width="856" height="42" rx="21" fill="url(#toolBarPinkGrad)" stroke="#ffb3d1" stroke-width="2.4" filter="url(#toolBarGlow)" />
+
+  <!-- Floating Sparkles -->
+  <g class="sp-left" transform="translate(32, 23)">
+    <path d="M 0 -8 Q 0 0 8 0 Q 0 0 0 8 Q 0 0 -8 0 Q 0 0 0 -8 Z" fill="#fff7d6" stroke="#f06292" stroke-width="0.8" />
+  </g>
+  <circle cx="54" cy="23" r="3.5" fill="#f06292" />
+  <circle cx="68" cy="23" r="2.5" fill="#ff8fb8" />
+
+  <!-- Center Label -->
+  <text x="430" y="28" class="tb-font" font-size="12" font-weight="900" fill="#5a2a45" text-anchor="middle" letter-spacing="1.5">
+    ✦ SWEET INGREDIENTS &amp; CREATIVE TOOLKIT ✦
+  </text>
+
+  <circle cx="792" cy="23" r="2.5" fill="#ff8fb8" />
+  <circle cx="806" cy="23" r="3.5" fill="#f06292" />
+  <g class="sp-right" transform="translate(828, 23)">
+    <path d="M 0 -8 Q 0 0 8 0 Q 0 0 0 8 Q 0 0 -8 0 Q 0 0 0 -8 Z" fill="#fff7d6" stroke="#f06292" stroke-width="0.8" />
+  </g>
+</svg>

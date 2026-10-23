@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-4 -5 423 185" width="100%" height="100%">
+  <defs>
+    <linearGradient id="prjBg4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#fff0f5" />
+    </linearGradient>
+
+    <pattern id="prWashi4" width="8" height="8" patternTransform="rotate(45 0 0)" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="0" x2="0" y2="8" stroke="#ffb3d1" stroke-width="2" />
+      <line x1="4" y1="0" x2="4" y2="8" stroke="#ffd6e7" stroke-width="2" />
+    </pattern>
+
+    <filter id="pCardGlow4" x="-10%" y="-10%" width="125%" height="125%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#f06292" flood-opacity="0.12" />
+    </filter>
+  </defs>
+
+  <style>
+    /* <![CDATA[ */
+    .bubbly-font {
+      font-family: ui-rounded, 'Varela Round', 'Nunito', 'Quicksand', system-ui, -apple-system, sans-serif;
+    }
+
+    @keyframes cardFloatAnim4 {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-3px); }
+    }
+    .card-pulse-border {
+      animation: cardFloatAnim4 4.5s ease-in-out infinite 2.2s;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .card-pulse-border { animation: none !important; }
+    }
+    /* ]]> */
+  </style>
+
+  <!-- Card Background -->
+  <rect x="0" y="0" width="415" height="175" rx="20" fill="url(#prjBg4)" stroke="#ffb3d1" stroke-width="2.6" filter="url(#pCardGlow4)" class="card-pulse-border" />
+
+  <!-- Corner Washi Tape -->
+  <rect x="30" y="-4" width="48" height="14" rx="3" fill="url(#prWashi4)" stroke="#f06292" stroke-width="0.8" opacity="0.85" />
+
+  <!-- Top Pill Tag -->
+  <g transform="translate(18, 16)">
+    <rect x="0" y="0" width="124" height="20" rx="10" fill="#ffd6e7" stroke="#ff8fb8" stroke-width="1.2" />
+    <circle cx="10" cy="10" r="3.2" fill="#f06292" />
+    <text x="20" y="14" class="bubbly-font" font-size="10" font-weight="900" fill="#5a2a45">✿ CLUB PORTAL</text>
+  </g>
+
+  <!-- Illustration Area & Title -->
+  <g transform="translate(18, 56)">
+    <!-- Taekwondo Belt & Star Sticker -->
+    <circle cx="16" cy="14" r="15" fill="#ffd6e7" stroke="#f06292" stroke-width="1.4" />
+    <rect x="9" y="12" width="14" height="4" rx="1" fill="#351a2a" stroke="#ffffff" stroke-width="0.8" />
+    <line x1="16" y1="16" x2="13" y2="21" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" />
+    <line x1="16" y1="16" x2="19" y2="21" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" />
+    <circle cx="16" cy="14" r="1.5" fill="#fff7d6" />
+
+    <text x="40" y="20" class="bubbly-font" font-size="18" font-weight="900" fill="#5a2a45">D-marsian-Taekwondo</text>
+  </g>
+
+  <!-- Description -->
+  <text x="18" y="92" class="bubbly-font" font-size="12.5" font-weight="600" fill="#5a2a45">
+    <tspan x="18" dy="0">Martial arts club digital management portal</tspan>
+    <tspan x="18" dy="17">&amp; member administration system.</tspan>
+  </text>
+
+  <!-- Language Chips -->
+  <g transform="translate(18, 136)">
+    <rect x="0" y="0" width="50" height="20" rx="10" fill="#ffffff" stroke="#ffb3d1" stroke-width="1.2" />
+    <text x="25" y="14" class="bubbly-font" font-size="10" font-weight="800" fill="#f06292" text-anchor="middle">PHP</text>
+
+    <rect x="56" y="0" width="60" height="20" rx="10" fill="#ffd6e7" stroke="#ff8fb8" stroke-width="1.2" />
+    <text x="86" y="14" class="bubbly-font" font-size="10" font-weight="800" fill="#5a2a45" text-anchor="middle">Laravel</text>
+
+    <rect x="122" y="0" width="60" height="20" rx="10" fill="#cfeaff" stroke="#ff8fb8" stroke-width="1.2" />
+    <text x="152" y="14" class="bubbly-font" font-size="10" font-weight="800" fill="#5a2a45" text-anchor="middle">MySQL</text>
+
+    <rect x="188" y="0" width="74" height="20" rx="10" fill="#e8d5ff" stroke="#ff8fb8" stroke-width="1.2" />
+    <text x="225" y="14" class="bubbly-font" font-size="10" font-weight="800" fill="#5a2a45" text-anchor="middle">Bootstrap</text>
+  </g>
+
+  <!-- Pill-Shaped "Open Repo ↗" Button -->
+  <g transform="translate(288, 130)">
+    <rect x="0" y="0" width="110" height="30" rx="15" fill="#ffffff" stroke="#f06292" stroke-width="1.6" />
+    <text x="55" y="19" class="bubbly-font" font-size="11" font-weight="900" fill="#f06292" text-anchor="middle">OPEN REPO ↗</text>
+  </g>
+</svg>

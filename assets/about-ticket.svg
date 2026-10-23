@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 340" width="100%" height="100%">
+  <defs>
+    <linearGradient id="noteBgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff0f5" />
+      <stop offset="50%" stop-color="#fff5f9" />
+      <stop offset="100%" stop-color="#ffd6e7" stop-opacity="0.4" />
+    </linearGradient>
+
+    <!-- Washi Tape Pattern -->
+    <pattern id="noteWashi" width="10" height="10" patternTransform="rotate(45 0 0)" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="0" x2="0" y2="10" stroke="#ffb3d1" stroke-width="2.5" />
+      <line x1="5" y1="0" x2="5" y2="10" stroke="#ffd6e7" stroke-width="2.5" />
+    </pattern>
+
+    <filter id="noteShadow" x="-10%" y="-10%" width="125%" height="125%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#f06292" flood-opacity="0.12" />
+    </filter>
+  </defs>
+
+  <style>
+    /* <![CDATA[ */
+    .bubbly-font {
+      font-family: ui-rounded, 'Varela Round', 'Nunito', 'Quicksand', system-ui, -apple-system, sans-serif;
+    }
+    /* ]]> */
+  </style>
+
+  <!-- Sticker Note Card Frame -->
+  <rect x="2" y="2" width="416" height="336" rx="24" fill="url(#noteBgGrad)" stroke="#ffb3d1" stroke-width="2.8" filter="url(#noteShadow)" />
+
+  <!-- Corner Washi Tape Strip (Scrapbook Look) -->
+  <g transform="translate(42, -2) rotate(-8)">
+    <rect x="0" y="0" width="72" height="22" rx="4" fill="url(#noteWashi)" stroke="#f06292" stroke-width="0.8" opacity="0.85" />
+  </g>
+
+  <!-- Top Ribbon Badge -->
+  <g transform="translate(100, 18)">
+    <rect x="0" y="0" width="220" height="26" rx="13" fill="#ffffff" stroke="#ffb3d1" stroke-width="1.6" />
+    <circle cx="14" cy="13" r="3.5" fill="#f06292" />
+    <circle cx="206" cy="13" r="3.5" fill="#ff8fb8" />
+    <text x="110" y="18" class="bubbly-font" font-size="11.5" font-weight="800" fill="#f06292" text-anchor="middle" letter-spacing="1">✿ JOURNAL ENTRY #01 ✿</text>
+  </g>
+
+  <!-- Greeting & Bubbly Name -->
+  <!-- [EDIT ME: Preferred Display Name: Harra / RAHRA / Harra Lou Ramos] -->
+  <g transform="translate(28, 86)">
+    <text x="0" y="0" class="bubbly-font" font-size="28" font-weight="900" fill="#5a2a45">
+      hello, i&apos;m <tspan fill="#f06292">harra</tspan> <tspan font-size="20" fill="#ff8fb8">♡</tspan>
+    </text>
+    <text x="0" y="24" class="bubbly-font" font-size="15" font-weight="800" fill="#a8688a">
+      Web Developer
+    </text>
+
+    <!-- Short Intro Text -->
+    <text x="0" y="52" class="bubbly-font" font-size="12.5" font-weight="600" fill="#5a2a45">
+      <tspan x="0" dy="0">Building responsive, high-performance web apps</tspan>
+      <tspan x="0" dy="19">with clean code and intuitive user experiences.</tspan>
+    </text>
+  </g>
+
+  <!-- Professional Skills & Focus Rows -->
+  <g transform="translate(26, 182)">
+    <!-- Row 1: Specialty -->
+    <g transform="translate(0, 0)">
+      <rect x="0" y="0" width="368" height="34" rx="12" fill="#ffffff" stroke="#ffb3d1" stroke-width="1.4" />
+      <circle cx="16" cy="17" r="4" fill="#cfeaff" stroke="#f06292" stroke-width="1.2" />
+      <text x="32" y="22" class="bubbly-font" font-size="11" font-weight="800" fill="#f06292">SPECIALTY</text>
+      <text x="116" y="22" class="bubbly-font" font-size="11.5" font-weight="700" fill="#5a2a45">Frontend Development &amp; Modern UI</text>
+    </g>
+
+    <!-- Row 2: Passion -->
+    <g transform="translate(0, 42)">
+      <rect x="0" y="0" width="368" height="34" rx="12" fill="#ffffff" stroke="#ffb3d1" stroke-width="1.4" />
+      <circle cx="16" cy="17" r="4" fill="#ffd6e7" stroke="#f06292" stroke-width="1.2" />
+      <text x="32" y="22" class="bubbly-font" font-size="11" font-weight="800" fill="#f06292">PASSION</text>
+      <text x="116" y="22" class="bubbly-font" font-size="11.5" font-weight="700" fill="#5a2a45">High-performance, intuitive web products</text>
+    </g>
+
+    <!-- Row 3: Approach -->
+    <g transform="translate(0, 84)">
+      <rect x="0" y="0" width="368" height="34" rx="12" fill="#ffffff" stroke="#ffb3d1" stroke-width="1.4" />
+      <circle cx="16" cy="17" r="4" fill="#e8d5ff" stroke="#f06292" stroke-width="1.2" />
+      <text x="32" y="22" class="bubbly-font" font-size="11" font-weight="800" fill="#f06292">APPROACH</text>
+      <text x="116" y="22" class="bubbly-font" font-size="11.5" font-weight="700" fill="#5a2a45">Clean code &amp; component-driven design</text>
+    </g>
+  </g>
+
+  <!-- Bottom Stamp -->
+  <text x="210" y="322" class="bubbly-font" font-size="11.5" font-weight="700" fill="#a8688a" text-anchor="middle" letter-spacing="0.5">
+    ✦ HANDCRAFTED WITH CARE &amp; SPARKLES ✦
+  </text>
+</svg>

@@ -1,10 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="-4 -5 423 185" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 185" width="100%" height="100%">
   <defs>
     <linearGradient id="prjBg3" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#ffffff" />
       <stop offset="100%" stop-color="#fff0f5" />
     </linearGradient>
 
+    <!-- Washi Tape Pattern -->
     <pattern id="prWashi3" width="8" height="8" patternTransform="rotate(45 0 0)" patternUnits="userSpaceOnUse">
       <line x1="0" y1="0" x2="0" y2="8" stroke="#ffb3d1" stroke-width="2" />
       <line x1="4" y1="0" x2="4" y2="8" stroke="#ffd6e7" stroke-width="2" />
@@ -36,36 +37,36 @@
   </style>
 
   <!-- Card Background -->
-  <rect x="0" y="0" width="415" height="175" rx="20" fill="url(#prjBg3)" stroke="#ffb3d1" stroke-width="2.6" filter="url(#pCardGlow3)" class="card-pulse-border" />
+  <rect x="2" y="2" width="414" height="178" rx="20" fill="url(#prjBg3)" stroke="#ffb3d1" stroke-width="2.6" filter="url(#pCardGlow3)" class="card-pulse-border" />
 
   <!-- Corner Washi Tape -->
   <rect x="30" y="-4" width="48" height="14" rx="3" fill="url(#prWashi3)" stroke="#f06292" stroke-width="0.8" opacity="0.85" />
 
   <!-- Top Pill Tag -->
-  <g transform="translate(18, 16)">
+  <g transform="translate(18, 14)">
     <rect x="0" y="0" width="134" height="20" rx="10" fill="#fff7d6" stroke="#f06292" stroke-width="1.2" />
     <circle cx="10" cy="10" r="3.2" fill="#f06292" />
     <text x="20" y="14" class="bubbly-font" font-size="10" font-weight="900" fill="#5a2a45">✿ FINANCE TRACKER</text>
   </g>
 
-  <!-- Illustration Area & Title (Full repository name) -->
-  <g transform="translate(18, 54)">
-    <!-- Cute Coin Sticker -->
-    <circle cx="16" cy="14" r="15" fill="#fff7d6" stroke="#f06292" stroke-width="1.4" />
-    <circle cx="16" cy="14" r="8" fill="#ffd6e7" stroke="#f06292" stroke-width="1" />
-    <text x="16" y="17" font-size="9" fill="#f06292" font-weight="900" text-anchor="middle">₱</text>
+  <!-- Illustration Area & Title (Compact, stops at y=71) -->
+  <g transform="translate(18, 44)">
+    <!-- Cute Coin Sticker (Circle radius 13, bottom at y=27) -->
+    <circle cx="14" cy="14" r="13" fill="#fff7d6" stroke="#f06292" stroke-width="1.3" />
+    <circle cx="14" cy="14" r="7" fill="#ffd6e7" stroke="#f06292" stroke-width="0.9" />
+    <text x="14" y="17" font-size="8.5" fill="#f06292" font-weight="900" text-anchor="middle">₱</text>
 
-    <text x="40" y="20" class="bubbly-font" font-size="17" font-weight="900" fill="#5a2a45">Expense-Tracking-System</text>
+    <text x="36" y="20" class="bubbly-font" font-size="17" font-weight="900" fill="#5a2a45">Expense-Tracking-System</text>
   </g>
 
-  <!-- Description -->
-  <text x="18" y="90" class="bubbly-font" font-size="12" font-weight="600" fill="#5a2a45">
+  <!-- Description (Starts safely at y=95, with 24px clear margin from icon) -->
+  <text x="18" y="95" class="bubbly-font" font-size="12" font-weight="600" fill="#5a2a45">
     <tspan x="18" dy="0">Personal finance &amp; budget management system</tspan>
-    <tspan x="18" dy="17">with visual accounting &amp; charts.</tspan>
+    <tspan x="18" dy="18">with visual accounting &amp; charts.</tspan>
   </text>
 
   <!-- Language Chips (Clean safe width) -->
-  <g transform="translate(18, 134)">
+  <g transform="translate(18, 138)">
     <rect x="0" y="0" width="68" height="20" rx="10" fill="#ffffff" stroke="#ffb3d1" stroke-width="1.2" />
     <text x="34" y="14" class="bubbly-font" font-size="9" font-weight="800" fill="#f06292" text-anchor="middle">JavaScript</text>
 
@@ -77,7 +78,7 @@
   </g>
 
   <!-- Pill-Shaped "Open Repo ↗" Button (Isolated right block) -->
-  <g transform="translate(302, 130)">
+  <g transform="translate(302, 134)">
     <rect x="0" y="0" width="98" height="28" rx="14" fill="#ffffff" stroke="#f06292" stroke-width="1.6" />
     <text x="49" y="18" class="bubbly-font" font-size="10" font-weight="900" fill="#f06292" text-anchor="middle">OPEN REPO ↗</text>
   </g>

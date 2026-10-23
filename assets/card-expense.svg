@@ -26,7 +26,7 @@
       50% { transform: translateY(-3px); }
     }
     .card-pulse-border {
-      animation: cardFloatAnim3 3.8s ease-in-out infinite 1.4s;
+      animation: cardFloatAnim3 4.5s ease-in-out infinite 1.5s;
     }
 
     @media (prefers-reduced-motion: reduce) {
@@ -43,42 +43,42 @@
 
   <!-- Top Pill Tag -->
   <g transform="translate(18, 16)">
-    <rect x="0" y="0" width="130" height="20" rx="10" fill="#fff7d6" stroke="#ffb3d1" stroke-width="1.2" />
+    <rect x="0" y="0" width="134" height="20" rx="10" fill="#fff7d6" stroke="#f06292" stroke-width="1.2" />
     <circle cx="10" cy="10" r="3.2" fill="#f06292" />
     <text x="20" y="14" class="bubbly-font" font-size="10" font-weight="900" fill="#5a2a45">✿ FINANCE TRACKER</text>
   </g>
 
-  <!-- Illustration Area & Title -->
-  <g transform="translate(18, 56)">
-    <!-- Cute Coin / Piggy Bank Sticker -->
+  <!-- Illustration Area & Title (Full repository name) -->
+  <g transform="translate(18, 54)">
+    <!-- Cute Coin Sticker -->
     <circle cx="16" cy="14" r="15" fill="#fff7d6" stroke="#f06292" stroke-width="1.4" />
     <circle cx="16" cy="14" r="8" fill="#ffd6e7" stroke="#f06292" stroke-width="1" />
     <text x="16" y="17" font-size="9" fill="#f06292" font-weight="900" text-anchor="middle">₱</text>
 
-    <text x="40" y="20" class="bubbly-font" font-size="19" font-weight="900" fill="#5a2a45">Expense-Tracking</text>
+    <text x="40" y="20" class="bubbly-font" font-size="17" font-weight="900" fill="#5a2a45">Expense-Tracking-System</text>
   </g>
 
   <!-- Description -->
-  <text x="18" y="92" class="bubbly-font" font-size="12.5" font-weight="600" fill="#5a2a45">
+  <text x="18" y="90" class="bubbly-font" font-size="12" font-weight="600" fill="#5a2a45">
     <tspan x="18" dy="0">Personal finance &amp; budget management system</tspan>
     <tspan x="18" dy="17">with visual accounting &amp; charts.</tspan>
   </text>
 
-  <!-- Language Chips -->
-  <g transform="translate(18, 136)">
-    <rect x="0" y="0" width="76" height="20" rx="10" fill="#ffffff" stroke="#ffb3d1" stroke-width="1.2" />
-    <text x="38" y="14" class="bubbly-font" font-size="10" font-weight="800" fill="#f06292" text-anchor="middle">JavaScript</text>
+  <!-- Language Chips (Clean safe width) -->
+  <g transform="translate(18, 134)">
+    <rect x="0" y="0" width="68" height="20" rx="10" fill="#ffffff" stroke="#ffb3d1" stroke-width="1.2" />
+    <text x="34" y="14" class="bubbly-font" font-size="9" font-weight="800" fill="#f06292" text-anchor="middle">JavaScript</text>
 
-    <rect x="82" y="0" width="50" height="20" rx="10" fill="#ffd6e7" stroke="#ff8fb8" stroke-width="1.2" />
-    <text x="107" y="14" class="bubbly-font" font-size="10" font-weight="800" fill="#5a2a45" text-anchor="middle">PHP</text>
+    <rect x="74" y="0" width="40" height="20" rx="10" fill="#ffd6e7" stroke="#ff8fb8" stroke-width="1.2" />
+    <text x="94" y="14" class="bubbly-font" font-size="9" font-weight="800" fill="#5a2a45" text-anchor="middle">PHP</text>
 
-    <rect x="138" y="0" width="60" height="20" rx="10" fill="#e8d5ff" stroke="#ff8fb8" stroke-width="1.2" />
-    <text x="168" y="14" class="bubbly-font" font-size="10" font-weight="800" fill="#5a2a45" text-anchor="middle">MySQL</text>
+    <rect x="120" y="0" width="48" height="20" rx="10" fill="#e8d5ff" stroke="#ff8fb8" stroke-width="1.2" />
+    <text x="144" y="14" class="bubbly-font" font-size="9" font-weight="800" fill="#5a2a45" text-anchor="middle">MySQL</text>
   </g>
 
-  <!-- Pill-Shaped "Open Repo ↗" Button -->
-  <g transform="translate(288, 130)">
-    <rect x="0" y="0" width="110" height="30" rx="15" fill="#ffffff" stroke="#f06292" stroke-width="1.6" />
-    <text x="55" y="19" class="bubbly-font" font-size="11" font-weight="900" fill="#f06292" text-anchor="middle">OPEN REPO ↗</text>
+  <!-- Pill-Shaped "Open Repo ↗" Button (Isolated right block) -->
+  <g transform="translate(302, 130)">
+    <rect x="0" y="0" width="98" height="28" rx="14" fill="#ffffff" stroke="#f06292" stroke-width="1.6" />
+    <text x="49" y="18" class="bubbly-font" font-size="10" font-weight="900" fill="#f06292" text-anchor="middle">OPEN REPO ↗</text>
   </g>
 </svg>

@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 92" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 100" width="100%" height="100%">
   <defs>
     <linearGradient id="allPrjBg" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#ffffff" />
@@ -38,13 +38,13 @@
   </style>
 
   <!-- Card Body -->
-  <rect x="2" y="2" width="856" height="88" rx="20" fill="url(#allPrjBg)" stroke="#ffb3d1" stroke-width="2.6" filter="url(#allPrjShadow)" class="all-prj-glow" />
+  <rect x="2" y="2" width="856" height="96" rx="20" fill="url(#allPrjBg)" stroke="#ffb3d1" stroke-width="2.6" filter="url(#allPrjShadow)" class="all-prj-glow" />
 
   <!-- Corner Washi Tape -->
   <rect x="42" y="-4" width="56" height="15" rx="3" fill="url(#allWashi)" stroke="#f06292" stroke-width="0.8" opacity="0.85" />
 
   <!-- Left Illustration Sticker: Cute Scrapbook Journal -->
-  <g transform="translate(24, 22)">
+  <g transform="translate(24, 26)">
     <circle cx="24" cy="24" r="22" fill="#ffd6e7" stroke="#f06292" stroke-width="1.4" />
     <!-- Book -->
     <path d="M 15 16 L 24 14 L 33 16 L 33 32 L 24 30 L 15 32 Z" fill="#ffffff" stroke="#f06292" stroke-width="1.2" />
@@ -54,31 +54,32 @@
     <circle cx="24" cy="11" r="2" fill="#fff7d6" stroke="#f06292" stroke-width="0.8" />
   </g>
 
-  <!-- Title & Description -->
-  <g transform="translate(88, 22)">
-    <text x="0" y="16" class="bubbly-font" font-size="18" font-weight="900" fill="#5a2a45">
-      see all my projects <tspan fill="#f06292" font-size="14">✿ COMPLETE JOURNAL ARCHIVE</tspan>
+  <!-- Title & Safe Multi-line Description (Clear buffer from button) -->
+  <g transform="translate(88, 18)">
+    <text x="0" y="16" class="bubbly-font" font-size="17" font-weight="900" fill="#5a2a45">
+      see all my projects <tspan fill="#f06292" font-size="13">✿ COMPLETE JOURNAL ARCHIVE</tspan>
     </text>
-    <text x="0" y="38" class="bubbly-font" font-size="12" font-weight="600" fill="#5a2a45">
-      Explore all public open-source experiments, 3D prototypes, and aesthetic web apps on GitHub.
+    <text x="0" y="36" class="bubbly-font" font-size="12" font-weight="600" fill="#5a2a45">
+      <tspan x="0" dy="0">Explore all public open-source experiments, 3D prototypes,</tspan>
+      <tspan x="0" dy="17">and aesthetic web apps on GitHub.</tspan>
     </text>
 
-    <!-- Chips -->
-    <g transform="translate(0, 46)">
-      <rect x="0" y="0" width="88" height="18" rx="9" fill="#ffd6e7" stroke="#ff8fb8" stroke-width="1" />
-      <text x="44" y="13" class="bubbly-font" font-size="9.5" font-weight="800" fill="#f06292" text-anchor="middle">Open Source</text>
+    <!-- Chips (Stop cleanly well before the button) -->
+    <g transform="translate(0, 56)">
+      <rect x="0" y="0" width="82" height="18" rx="9" fill="#ffd6e7" stroke="#ff8fb8" stroke-width="1" />
+      <text x="41" y="13" class="bubbly-font" font-size="9" font-weight="800" fill="#f06292" text-anchor="middle">Open Source</text>
 
-      <rect x="94" y="0" width="90" height="18" rx="9" fill="#cfeaff" stroke="#ff8fb8" stroke-width="1" />
-      <text x="139" y="13" class="bubbly-font" font-size="9.5" font-weight="800" fill="#5a2a45" text-anchor="middle">Three.js R&amp;D</text>
+      <rect x="88" y="0" width="86" height="18" rx="9" fill="#cfeaff" stroke="#ff8fb8" stroke-width="1" />
+      <text x="131" y="13" class="bubbly-font" font-size="9" font-weight="800" fill="#5a2a45" text-anchor="middle">Three.js R&amp;D</text>
 
-      <rect x="190" y="0" width="94" height="18" rx="9" fill="#ffffff" stroke="#ffb3d1" stroke-width="1" />
-      <text x="237" y="13" class="bubbly-font" font-size="9.5" font-weight="800" fill="#5a2a45" text-anchor="middle">Web Projects</text>
+      <rect x="180" y="0" width="88" height="18" rx="9" fill="#ffffff" stroke="#ffb3d1" stroke-width="1" />
+      <text x="224" y="13" class="bubbly-font" font-size="9" font-weight="800" fill="#5a2a45" text-anchor="middle">Web Projects</text>
     </g>
   </g>
 
-  <!-- Open Full Menu Button Shape -->
-  <g transform="translate(636, 28)">
-    <rect x="0" y="0" width="200" height="36" rx="18" fill="#ffd6e7" stroke="#f06292" stroke-width="1.6" />
-    <text x="100" y="23" class="bubbly-font" font-size="12" font-weight="900" fill="#f06292" text-anchor="middle">BROWSE ALL REPOS ↗</text>
+  <!-- Open Full Menu Button Shape (Clean isolated right block) -->
+  <g transform="translate(636, 31)">
+    <rect x="0" y="0" width="196" height="38" rx="19" fill="#ffd6e7" stroke="#f06292" stroke-width="1.8" />
+    <text x="98" y="24" class="bubbly-font" font-size="12" font-weight="900" fill="#f06292" text-anchor="middle">BROWSE ALL REPOS ↗</text>
   </g>
 </svg>
